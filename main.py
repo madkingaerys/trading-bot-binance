@@ -23,7 +23,7 @@ logger.addHandler(file_handler)
 if __name__ == '__main__':
     api_keys = dict()
 
-    file = open("api.txt", "r")
+    file = open("api_keys.txt", "r")
     for l in file.readlines():
         pair = l.split("=")
         api_keys[pair[0]] = pair[1].rstrip()

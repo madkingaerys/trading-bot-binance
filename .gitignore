@@ -1,1 +1,10 @@
 api.txt
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/TradingBotBinance.iml
+/.idea/vcs.xml
+/info.log
+/.idea/.gitignore
+/api_keys.txt
