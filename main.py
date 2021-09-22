@@ -21,9 +21,16 @@ logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
 if __name__ == '__main__':
+    api_keys = dict()
 
-    binance = BinanceFuturesClient("ecbbe007e060c1f74cc6c87dd891fe3c63e03024bc12890b35931d538cb5a892",
-                                   "b969281bd0f45700c78394b6784c47395c651cdc45e96a91e548f131de01cb65",
+    file = open("api.txt", "r")
+    for l in file.readlines():
+        pair = l.split("=")
+        api_keys[pair[0]] = pair[1].rstrip()
+
+    binance = BinanceFuturesClient(api_keys['binance_testnet_public'],
+                                   api_keys['binance_testnet_secret'],
                                    True)
-    root = tk.Tk()
-    root.mainloop()
+
+    #root = tk.Tk()
+    #root.mainloop()
