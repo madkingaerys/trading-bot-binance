@@ -1,7 +1,0 @@
-2021-09-20 19:03:04,331 INFO :: This message just shows basic information
-2021-09-20 19:03:04,332 WARNING :: This message is about something you should pay attention to
-2021-09-20 19:03:04,333 ERROR :: This message helps to debug a n error that occurred in your program
-2021-09-20 19:04:53,582 INFO :: This message just shows basic information
-2021-09-20 19:04:53,583 WARNING :: This message is about something you should pay attention to
-2021-09-20 19:04:53,585 ERROR :: This message helps to debug a n error that occurred in your program
-2021-09-20 19:04:53,585 INFO :: Hello from the Binance connector
