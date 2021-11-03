@@ -3,6 +3,7 @@ import logging
 from pprint import pprint
 from connectors.binance_futures import BinanceFuturesClient
 
+from interface.root_component import Root
 
 logger = logging.getLogger()
 
@@ -24,13 +25,13 @@ if __name__ == '__main__':
     api_keys = dict()
 
     file = open("api_keys.txt", "r")
-    for l in file.readlines():
-        pair = l.split("=")
+    for line in file.readlines():
+        pair = line.split("=")
         api_keys[pair[0]] = pair[1].rstrip()
 
     binance = BinanceFuturesClient(api_keys['binance_testnet_public'],
                                    api_keys['binance_testnet_secret'],
                                    True)
 
-    #root = tk.Tk()
-    #root.mainloop()
+    root = Root()
+    root.mainloop()
